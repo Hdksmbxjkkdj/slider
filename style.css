@@ -1,0 +1,111 @@
+:root {
+    --primary : rgb(19, 9, 80);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+}
+
+/*  public classes  */
+
+.justify {
+    text-align: justify;
+}
+
+/*  swiper  */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper{ 
+    padding: 2rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+}
+
+.swiper-slide .icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .5rem;
+    background-color: rgb(31, 154, 175);
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.mySwiper .swiper-slide-thumb-active .icon {
+    transform: scale(1.2);
+}
+
+.mySwiper2 {
+    height: 25rem;
+}
+
+/*  detailes  */
+
+.detailes {
+    background: linear-gradient(to right,rgb(220, 119, 119),rgb(116, 116, 228));
+    max-height: 20rem;
+    overflow-y: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.detailes h4 {
+    font-weight: bold;
+    color: var(--primary)
+}
+
+.detailes p {
+    color: #eee;
+}
+
+.detailes .lists {
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detailes .btn-more {
+    background-color: var(--primary);
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: .5rem 2rem;
+}
+
+/*  rect  */
+
+.rect-container {
+    position: absolute;
+    right: 0;
+    top: -3.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.rect {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
